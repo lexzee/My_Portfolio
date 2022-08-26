@@ -1,0 +1,160 @@
+/**
+* Colors 
+* #ff9b00, #000000, #ffffff
+*/
+
+body{
+  margin: 0;
+}
+/* Navbar */
+nav{
+  height: 5vh;
+  width: 100%;
+  background: #000000;
+  text-align: center;
+  padding: 20px 25px 0px 25px;
+  margin: 0;
+  position: fixed;
+  top: -2px;
+}
+nav a{
+  padding: 0px 25px 0px 25px;
+  text-decoration: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #ff9b00;
+  margin: 0;
+}
+
+/* Main */
+main{
+  margin: 0;
+}
+/* welcome-section */
+#welcome-section{
+  height: 100vh;
+  background: #ff9b005f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  margin-top: 20px;
+  border-radius: 9px;
+  box-shadow: 0 0 5px 2px #0000003f;
+}
+h1{
+  font-size: 100px;
+  margin: 0;
+  margin-bottom: -20px;
+  color: #000000;
+}
+p{
+  font-size: 30px;
+  line-height: 35px;
+  text-align: center;
+}
+p span{
+  font-size: 35px;
+  background: #000000;
+  border-radius: 5px;
+  padding:1px 5px;
+  color: #ff9b00ff;
+}
+
+/* projects section */
+#projects{
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 00px;
+  margin-top: 50px;
+}
+#projects div{
+  width: 70%;
+  margin-bottom: 50px;
+  height: auto;
+  border: 0.1px solid #ff9b00;
+  border-radius: 5px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 0 10px #0000005f;
+}
+#projects div::hover{
+  transform: scale(2);
+  
+}
+#projects div a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.pro-img{
+  width: 100%;
+  height: auto;
+  border: 1px solid #ff9b00;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+#more{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+#show-all{
+  width: 50px;
+  height: 30px;
+  font-size: 20px;
+  background: #ff9b00;
+  border-radius: 25px;
+}
+/* contact section */
+footer{
+  background: #000000;
+  color: #ff9b00;
+  text-align: center;
+}
+#contact{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+li{
+  display: inline;
+  margin-bottom: 20px;
+}
+#contact a{
+  text-decoration: none;
+  color: #ff9b00;
+  text-align: center;
+  margin: 0px 20px 80px 2px;
+}
+.logo{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 100%;
+  top: 2.5px;
+}
+contact{
+  height: auto;
+  border-radius: 9px;
+  box-shadow: 0 0 5px 2px #0000003f;
+  display: inline;
+}
+
+@media(min-width: 850px){
+  #projects{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    margin: auto;
+  }
+}
